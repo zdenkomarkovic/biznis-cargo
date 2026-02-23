@@ -38,7 +38,7 @@ export function buildMetadata({
 }: BuildMetadataOptions = {}): Metadata {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
   const canonicalUrl = url ?? SITE_URL;
-  const ogImage = image ?? `${SITE_URL}/og-image.png`; // Dodaj og-image.png u /public
+  const ogImage = image ?? `${SITE_URL}/opengraph-image`;
 
   return {
     title: fullTitle,
